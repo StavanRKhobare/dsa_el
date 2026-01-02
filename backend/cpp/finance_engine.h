@@ -552,6 +552,21 @@ public:
         billQueue.clear();
     }
     
+    // Load undo action from parsed data (for persistence)
+    void loadUndoAction(ActionType type, const std::string& data) {
+        undoStack.push(Action(type, data));
+    }
+    
+    // Get all undo actions (for persistence)
+    std::vector<Action> getUndoActions() const {
+        return undoStack.getAllActions();
+    }
+    
+    // Clear undo stack
+    void clearUndoStack() {
+        undoStack.clear();
+    }
+    
     // ===== STATISTICS =====
     
     int getTransactionCount() const { return transactionList.size(); }
