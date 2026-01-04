@@ -754,7 +754,9 @@ This project is developed for academic purposes as part of Data Structures & App
 
 ## Contributors
 
-DSA Lab Project Team
+1. Tapan Gupta
+2. Stavan Rahul Khobare
+3. Suraj Gupta
 
 ---
 
